@@ -13,7 +13,7 @@ export const WelcomeView = ({
   return (
     <div ref={ref} inert={disabled} className="absolute inset-0">
       <div className="flex h-full items-center justify-between px-3">
-        <Button variant="secondary" size="lg" onClick={onStartCall} className="bg-[var(--secondary-gradient)]" style={{width: '100%'}}>
+        <Button variant="secondary" size="lg" onClick={onStartCall} className="secondary" style={{width: '100%'}}>
            try Wakeup Buddy
         </Button>
       </div>
