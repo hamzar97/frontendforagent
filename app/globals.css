@@ -12,7 +12,7 @@
   --fgSerious: #db1b06;
   --fgSuccess: #006430;
   --fgModerate: #a65006;
-  --fgAccent: #002cf2;
+  --fgAccent: #FFB100;
 
   --bg1: #f9f9f6;
   --bg2: #f3f3f1;
@@ -32,15 +32,15 @@
   --separatorAccent: #b3ccff;
 
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(1 0 0 / 0);
   --background-gradient: linear-gradient(135deg, hsl(45, 100%, 66%), hsl(36, 100%, 51%));
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #002cf2;
-  --primary-hover: #0020b9;
+  --primary: #FFB100;
+  --primary-hover: #dba01b;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-gradient: linear-gradient(135deg, hsl(45, 100%, 66%), hsl(36, 100%, 51%));
@@ -65,6 +65,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+      --shadow-drop: 0px 10px 50px 0px rgba(255, 212, 20, 0.4);
+    --shadow-inset1: inset 10px 10px 20px 0px rgba(255, 255, 255, 0.25);
+    --shadow-inset2: inset -10px -10px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dark {
@@ -95,14 +98,14 @@
   --separatorModerate: #3f2208;
   --separatorAccent: #0c1640;
 
-  --background: oklch(0.145 0 0);
+  --background: oklch(1 0 0 / 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.269 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: #1fd5f9;
-  --primary-hover: #19a7c7;
+  --primary: #FFB100;
+  --primary-hover: #dba01b;
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -126,6 +129,9 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.439 0 0);
+      --shadow-drop: 0px 10px 50px 0px rgba(255, 212, 20, 0.4);
+    --shadow-inset1: inset 10px 10px 20px 0px rgba(255, 255, 255, 0.25);
+    --shadow-inset2: inset -10px -10px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 @theme inline {
@@ -199,6 +205,9 @@
   --color-destructive: var(--bgSerious);
   --color-destructive-hover: var(--bgSerious2);
   --color-destructive-foreground: var(--fgSerious);
+      --shadow-drop: 0px 10px 50px 0px rgba(255, 212, 20, 0.4);
+    --shadow-inset1: inset 10px 10px 20px 0px rgba(255, 255, 255, 0.25);
+    --shadow-inset2: inset -10px -10px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 @layer base {
@@ -211,6 +220,19 @@
 }
 
 @layer utils {
+.trywakeupbuddy {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: var(--shadow-drop), var(--shadow-inset1), var(--shadow-inset2);
+  border: none;
+  border-radius: 28px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: opacity 0.2s;
+  display: inline-block;
+}
   .animate-text-shimmer {
     animation-delay: 0.5s;
     animation-duration: 3s;
