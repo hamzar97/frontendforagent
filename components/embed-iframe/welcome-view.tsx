@@ -12,7 +12,7 @@ export const WelcomeView = ({
 }: React.ComponentProps<'div'> & WelcomeViewProps) => {
   return (
     <div ref={ref} inert={disabled} className="absolute inset-0">
-      <div className="flex h-full items-center justify-between">
+      <div className="flex h-full justify-between">
         <Button variant="primary" size="lg" onClick={onStartCall} className="trywakeupbuddy w-79">
           Try Wakeup Buddy
         </Button>

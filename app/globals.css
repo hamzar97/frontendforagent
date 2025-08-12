@@ -228,10 +228,11 @@
   border: none;
   border-radius: 28px;
   font-family: "Baloo 2", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   transition: opacity 0.2s;
   display: inline-block;
+  height: 65px;
 }
   .animate-text-shimmer {
     animation-delay: 0.5s;

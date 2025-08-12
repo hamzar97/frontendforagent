@@ -37,14 +37,14 @@ export default function Welcome() {
         <p>There are two different styles of embeds - an iframe style, and a popup style.</p>
 
         <h3 className="text-lg font-bold">IFrame Style</h3>
-        <iframe src={embedUrl} style={{ width: 320, height: 64 }} />
+        <iframe src={embedUrl} style={{ width: 320, height: 66 }} />
 
         <p>
           To include the iframe style embed into a web app, paste the below embed HTML into the
           page:
         </p>
         <pre className="overflow-auto">
-          {`<iframe\n  src="${embedUrl}"\n  style="width: 320px; height: 64px;"\n></iframe>`}
+          {`<iframe\n  src="${embedUrl}"\n  style="width: 320px; height: 66px;"\n></iframe>`}
         </pre>
 
         <h3 className="text-lg font-bold">Popup Style</h3>
