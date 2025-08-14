@@ -19,6 +19,10 @@ export default function useConnectionDetails() {
       process.env.NEXT_PUBLIC_CONN_DETAILS_ENDPOINT ?? '/api/connection-details',
       window.location.origin
     );
+
+    url.searchParams.set('name', 'Bruno');
+
+
     fetch(url.toString())
       .then((res) => res.json())
       .then((data) => {
